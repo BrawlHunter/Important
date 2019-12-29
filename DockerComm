@@ -1,0 +1,23 @@
+$ sudo apt-get update
+$ sudo apt-get remove docker docker-engine docker.io
+$ sudo apt install docker.io
+yes
+$ sudo systemctl start docker
+$ sudo systemctl enable docker
+$ docker --version
+$ sudo systemctl status docker
+>>active (running)<<
+$ sudo docker images
+$ sudo docker ps
+$ sudo docker pull nginx
+$ git clone [https://....]
+$ ls
+containerapps.test
+$ cd containerapps
+$ ls
+nodeapp
+$ cd nodeapp
+$ ls
+$ sudo docker build -t nodeapp .
+$ ls
+sudo docker run -p 8081:8081 nodeapp
